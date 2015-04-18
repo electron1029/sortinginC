@@ -6,11 +6,11 @@ void bubblesort(int *numbers, int n)
 	int temp = 0;
 	int j = 0;
 
-	for (i = 1; i < n; i++)
+	for (i = 0; i < (n - 1); i++)
 	{
-		for (j = 0; j < n; j++)
+		for (j = 0; j < (n - i - 1); j++)
 		{
-			if (*(numbers + j) == *(numbers + j + 1))
+			if (*(numbers + j) > *(numbers + j + 1))
 			{
 				temp = *(numbers + j);
 				*(numbers + j) = *(numbers + j + 1);

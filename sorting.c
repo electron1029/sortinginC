@@ -23,4 +23,10 @@ int main()
 	}
 
 	bubblesort(randomNumbers, n);
+
+	for (i = 0; i < n; i++)
+	{
+		printf("%d\n", *(randomNumbers + i));
+	}
+	scanf_s("%d", &n);
 }
