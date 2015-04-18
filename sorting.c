@@ -22,7 +22,7 @@ int main()
 		*(randomNumbers + i) = rand();
 	}
 
-	bubblesort(randomNumbers, n);
+	quicksort(randomNumbers, 0, n);
 
 	for (i = 0; i < n; i++)
 	{
