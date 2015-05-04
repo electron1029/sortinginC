@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<time.h>
+#include<stdlib.h>
 #include "bubblesort.h"
 
 void bubblesort(int *numbers, int n)
@@ -26,10 +27,11 @@ int main(int argc, char *argv[])
 {
 	int n = atoi(argv[1]);
 	int i = 0;
+	int *randomNumbers = malloc(sizeof(int)*n);
 
 	// generate n random numbers where n is based on user input
 	srand(time(NULL));
-	int *randomNumbers = malloc(sizeof(int)*n);
+
 	for (i = 0; i < n; i++)
 	{
 		*(randomNumbers + i) = rand();
